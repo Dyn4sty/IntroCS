@@ -10,15 +10,13 @@ import java.util.Scanner;
  */
 public class Circle {
     public static void main(String[] args) {
-        final double TWO = 2.0;
-
         Scanner scan = new Scanner(System.in);
         System.out.println("this program calculates the areas and the perimeters of the "
                 + "excircle and the incircle of a given rectangle");
-        System.out.print("Please enter the two coordinates of the " + "left-upper point of the rectangle: ");
+        System.out.print("Please enter the 2 coordinates of the " + "left-upper point of the rectangle: ");
         int leftUpX = scan.nextInt();
         int leftUpY = scan.nextInt();
-        System.out.print("Please enter the two coordinates of the " + "right-bottom point of the rectangle: ");
+        System.out.print("Please enter the 2 coordinates of the " + "right-bottom point of the rectangle: ");
         int rightBottomX = scan.nextInt();
         int rightBottomY = scan.nextInt();
 
@@ -36,16 +34,16 @@ public class Circle {
          * Perimeter = 2 × π × R
          *
          */
-        double inCircleRadius = rectangleHeight / TWO; // The Rectangle's height is also the incircle's diameter.
-        // We divide the diameter by two to get the radius.
-        double inCircleArea = Math.PI * Math.pow(inCircleRadius, TWO); // Calculates the area according to the formula
-        double inCirclePerimeter = TWO * Math.PI * inCircleRadius; // Calculates the Perimeter according to the formula
+        double inCircleRadius = rectangleHeight / 2; // The Rectangle's height is also the incircle's diameter.
+        // We divide the diameter by 2 to get the radius.
+        double inCircleArea = Math.PI * Math.pow(inCircleRadius, 2); // Calculates the area according to the formula
+        double inCirclePerimeter = 2 * Math.PI * inCircleRadius; // Calculates the Perimeter according to the formula
 
         // exCircle Calculations //
-        double exCircleRadius = Math.sqrt(Math.pow(rectangleHeight, TWO) + Math.pow(rectangleWidth, TWO)) / TWO; // The Rectangle's diagonal is also the excircle's diameter.
-        // We divide the diameter by two to get the radius.
-        double exCirclePerimeter = TWO * Math.PI * exCircleRadius; // Calculates the perimeter based of the formula.
-        double exCircleArea = Math.PI * Math.pow(exCircleRadius, TWO);  // Calculates the area according to the formula.
+        double exCircleRadius = Math.sqrt(Math.pow(rectangleHeight, 2) + Math.pow(rectangleWidth, 2)) / 2; // The Rectangle's diagonal is also the excircle's diameter.
+        // We divide the diameter by 2 to get the radius.
+        double exCirclePerimeter = 2 * Math.PI * exCircleRadius; // Calculates the perimeter based of the formula.
+        double exCircleArea = Math.PI * Math.pow(exCircleRadius, 2);  // Calculates the area according to the formula.
 
         /*
          * stdout `printf` is a convenience method to write a formatted string, %f is a
