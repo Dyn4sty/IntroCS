@@ -9,11 +9,11 @@ public class Exam_2020_87 {
         System.out.println(totalWays(mat, 2)); // 2
         System.out.println(totalWays(mat, 3)); // 2
         System.out.println(totalWays(mat, 4)); // 0
-        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9}; /*
-                                                1   5   8
-                                                2   4   5
-                                                        */
-        printTriplets(a, 40);
+        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9}; 
+        printTriplets(a, 40); /*
+                                1   5   8
+                                2   4   5
+                                            */
     }
 
     public static int totalWays(int[][] mat, int k) {
