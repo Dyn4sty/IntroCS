@@ -1,5 +1,3 @@
-package com.maman.fifteen;
-
 public class IntNode {
     private int _value;
     private IntNode _next;

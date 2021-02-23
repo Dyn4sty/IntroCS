@@ -1,5 +1,3 @@
-package com.maman.fifteen;
-
 /**
  * A BigNumber
  *

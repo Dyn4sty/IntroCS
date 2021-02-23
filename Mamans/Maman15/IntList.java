@@ -1,5 +1,3 @@
-package com.maman.fifteen;
-
 public class IntList {
     private IntNode _head;
 
